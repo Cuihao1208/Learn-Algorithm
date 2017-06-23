@@ -14,7 +14,7 @@ void quickSort(int left, int right, int* nums){
 				j--;
 			}
 			nums[i] = nums[j];
-			while(i < j && nums[i] < key){
+			while(i < j && nums[i] <= key){ //当所给array中元素互不相等时可以不带等号，但若有相等元素则必须加等号
 				i++;
 			}
 			nums[j] = nums[i];
